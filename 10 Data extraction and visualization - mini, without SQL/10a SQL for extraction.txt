@@ -1,0 +1,59 @@
+/* Find the number of flights of each airplane type in September 2018 */
+
+SELECT model, COUNT(flight_id) AS flights_amount
+FROM flights
+INNER JOIN aircrafts ON flights.aircraft_code = aircrafts.aircraft_code
+WHERE EXTRACT(year FROM flights.departure_time) = '2018' AND EXTRACT(month FROM flights.departure_time) = '09'
+GROUP BY model
+
+
+
+/* Count flights in september */
+
+SELECT 
+     CASE 
+        WHEN aircrafts.model LIKE 'Boeing%' THEN 'Boeing'
+        WHEN aircrafts.model LIKE 'Airbus%' THEN 'Airbus'
+        ELSE 'other'
+     END AS model_comp
+    , COUNT(flight_id) AS flights_amount
+FROM aircrafts
+INNER JOIN flights ON aircrafts.aircraft_code = flights.aircraft_code
+WHERE EXTRACT(month FROM departure_time) = '09' -- AND (aircrafts.model LIKE 'Airbus%' OR aircrafts.model LIKE 'Boeing%')
+GROUP BY model_comp
+ORDER BY flights_amount DESC
+
+
+/*Find average number of flights for each city in August 2018 */
+
+
+SELECT cnt_fly.city, AVG(cnt_fly.cnt_flights)
+FROM 
+(SELECT city, COUNT(flight_id) AS cnt_flights
+FROM flights INNER JOIN airports ON airports.airport_code = flights.arrival_airport
+WHERE flights.departure_time :: date BETWEEN '2018-08-01' AND '2018-08-31'
+GROUP BY city, EXTRACT(day FROM arrival_time)) AS cnt_fly
+GROUP BY cnt_fly.city
+
+/* Find the number of the week with music festivals in Moscow*/
+
+SELECT festival_name, EXTRACT(week from CAST(festival_date AS date)) festival_week
+FROM festivals
+WHERE festival_city = 'Москва' AND CAST(festival_date AS date) BETWEEN '23-06-2018' AND '30-09-2018' 
+
+
+/* For each festival week in Moscow find the number of tickets bought */
+
+SELECT EXTRACT(week FROM CAST(departure_time AS date)) AS week_number, count(ticket_no) AS ticket_amount, SUBQ.festival_week, SUBQ.festival_name
+FROM airports
+INNER JOIN flights ON airports.airport_code = flights.arrival_airport
+INNER JOIN ticket_flights ON ticket_flights.flight_id = flights.flight_id
+LEFT JOIN 
+
+(SELECT festival_name, EXTRACT(week from CAST(festival_date AS date)) festival_week
+FROM festivals
+WHERE festival_city = 'Москва' AND CAST(festival_date AS date) BETWEEN '23-07-2018' AND '30-09-2018') AS SUBQ
+ON SUBQ.festival_week = EXTRACT(week FROM CAST(flights.departure_time AS date))
+
+WHERE city = 'Москва' AND CAST(departure_time AS date) BETWEEN '23-07-2018' AND '30-09-2018' 
+GROUP BY week_number, subq.festival_week, subq.festival_name
