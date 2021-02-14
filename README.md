@@ -14,14 +14,14 @@ Kind regards and have a good day!
 
 | # | Project name | Project overview | Libraries used |
 |---| ---          |---               | ---            |
-|1  |1 Research analysis - apartment prices              |                  |                |        
-|2  |
-|3  |
-|4  |
-|5  |
-|6  |
-|7  |
-|8  |
-|9  |
-|10 |
-|11 |
+|1  |Research analysis - apartment prices              |                  |                |        
+|2  |Statistical analysis - phone tariff plans         |
+|3  |Analytical analysis - most popular games          |
+|4  |Machine learning intro - phone tariff plans        |
+|5  |Machine learning part 1 - bank clients categorisation |
+|6  |Machine learning part 2 - oil wells regression and bootstrap |
+|7  |Machine learning part 3 - gold processing regression |
+|8  |Machine learning part 4 - forecasting time series |
+|9  |Machine learning part 5 - natural language processing |
+|10 |Data extraction and visualization - mini, without SQL |
+|11 | Computer vision |
