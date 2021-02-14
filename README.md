@@ -14,7 +14,7 @@ Kind regards and have a good day!
 
 | # | Project name | Project overview | Libraries used |
 |---| ---          |---               | ---            |
-|1  |              |                  |                |        
+|1  |1 Research analysis - apartment prices              |                  |                |        
 |2  |
 |3  |
 |4  |
