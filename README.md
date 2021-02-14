@@ -22,6 +22,6 @@ Kind regards and have a good day!
 |6  |Machine learning part 2 - oil wells regression and bootstrap | Now we work for the oil production company. We need to decide where to drill the new well. | `sklearn` |
 |7  |Machine learning part 3 - gold processing regression         | Here we have to prepare a prototype machine learning model for Digits company. The company develops solutions for the efficient operation of industrial enterprises. The model should predict the recovery rate of gold from a gold-bearing ore. | `sklearn` |
 |8  |Machine learning part 4 - forecasting time series            | We use machine learning to forecast demand for taxi services in the upcoming hours based on cyclicality of orders. | `statsmodels.tsa.seasonal`, `catboost`, `lightgbm`, `sklearn` |
-|9  |Machine learning part 5 - natural language processing        |
-|10 |Data extraction and visualization - mini, without SQL        |
+|9  |Machine learning part 5 - natural language processing        | In this project we use simple natural language processing techniques as tf-idf to determine if exact comment contains "toxic" words or not and then classify it. | `nltk`, `lightgbm `, `sklearn` |
+|10 |Data extraction and visualization - mini, without SQL        | We use SQL queries to drag data about number of flights (and other statistics) during music festivals. Secondly in python we use simple visualization of data we get from SQL. | `SQL`, `seaborn` |
 |11 | Computer vision                                             |
