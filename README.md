@@ -11,3 +11,6 @@ You can also notice that project folders are having numbering order - this is th
 Kind regards and have a good day!
 
 @ February 6th, 2021
+
+| Project name | Project overview | Libraries used |
+| ---          |---               | ---            |
