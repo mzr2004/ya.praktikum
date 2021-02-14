@@ -13,9 +13,11 @@ Kind regards and have a good day!
 @ February 6th, 2021
 
 | # | Project name                                                | Project overview | Libraries used |
+
 |---| ---                                                         |---               | ---            |
-|1  |Research analysis - apartment prices                         |In this project our main task is to define metrics that influence the apartments prices most.
-We mainly use visualization tools and correlation analysis to figure out influencing features                  |                |        
+
+|1  |Research analysis - apartment prices                         |In this project our main task is to define metrics that influence the apartments prices most. We mainly use visualization tools and correlation analysis to figure out influencing features                  |                |        
+
 |2  |Statistical analysis - phone tariff plans                    |
 |3  |Analytical analysis - most popular games                     |
 |4  |Machine learning intro - phone tariff plans                  |
