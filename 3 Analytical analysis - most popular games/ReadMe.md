@@ -20,8 +20,8 @@ _Research analysis_:
 1. etc.
 
 _Statistical analysis_:
-1. Checking statistical hypothesis that users reviews on different platforms are the same or not?
-1. Checking statistical hypothesis that reviews on different genres are the same or not?
+1. Checking `statistical hypothesis` that users reviews on different platforms are the same or not?
+1. Checking `statistical hypothesis` that reviews on different genres are the same or not?
 
 ## Some results
 1. We define that different types of platforms should have been focused for marketing campaign depending on the regions.
