@@ -12,10 +12,7 @@ _Data preparation:_
 1. Splitting data to training, validation and test sets.
 
 _Modeling:_
-1. Creating three real categorization models:
-- logistic;
-- decision tree;
-- random forest;
+1. Creating three real categorization models: `logistic`, `decision tree`, `random forest`
 1. Building a manual loop to understand iteratively best hyperparameters
 1. Building one dummy model and random model for reasonable-ness check
 
