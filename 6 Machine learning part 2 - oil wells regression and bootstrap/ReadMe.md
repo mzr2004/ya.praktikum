@@ -20,7 +20,7 @@ _Data preparation:_
 _Modeling:_
 1. Simple models are build for each potential region
 1. Building function to determine `break even point` in each potential region
-1. Performing bootstrap to select specific number of drills in each region and build distribution of profits and lossess in each region
+1. Performing `bootstrap` to select specific number of drills in each region and build distribution of profits and lossess in each region
 
 ## Some results
 1. Based on comparison of profits and lossess we recommend region #3 for further exploration
