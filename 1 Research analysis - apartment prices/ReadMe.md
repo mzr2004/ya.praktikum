@@ -14,7 +14,7 @@ We mainly use visualization tools and correlation analysis to figure out influen
 
 ## Project flow
 _Preprocessing:_
-1. deliting duplicates;
+1. deleting duplicates;
 1. filling in missing values, using medians;
 1. lemmatizing diffirent ways to name same geographical area to lemmas;
 1. deliting unreasonable values (like to high ceiling, or kitchen area > total area).
