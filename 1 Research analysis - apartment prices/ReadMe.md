@@ -32,7 +32,7 @@ _Research analysis_:
 - how price depends on the number of rooms/area;
 - etc.
 
-## Some results:
+## Some results
 1. City center has almost no economy objects;
 1. The greater the total aread the less is the price per sq.meter;
 1. Geographical center is area within 7km zone of the center, after that threshold price substantially declines;
