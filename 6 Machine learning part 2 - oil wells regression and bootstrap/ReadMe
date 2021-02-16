@@ -1,8 +1,0 @@
-Now we work for the oil production company. We need to decide where to drill the new well.
-We follow several steps to make our recos:
-- In a selected region, characteristics for wells are collected: oil quality and volume of its reserves;
-- Build a model to predict the volume of reserves in new wells;
-- The wells with the highest value estimates are selected;
-The region with the maximum total profit of the selected wells is determined.
-We have oil samples in three regions. The characteristics for each well in the region are already known. 
-We analyze the potential rewards and risks using the Bootstrap.
